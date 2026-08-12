@@ -31,7 +31,7 @@ export default function Skills() {
         x: -40, opacity: 0, stagger: 0.1, duration: 0.6, ease: 'power2.out',
         scrollTrigger: { trigger: '.skills-box', start: 'top 78%' },
       })
-       gsap.fromTo('.bar-fill',
+      gsap.fromTo('.bar-fill',
         { width: '0%' },
         {
           width: (i, el) => el.getAttribute('data-width') + '%',
@@ -45,6 +45,7 @@ export default function Skills() {
         y: 20, opacity: 0, stagger: 0.06, duration: 0.4,
         scrollTrigger: { trigger: '.tools', start: 'top 88%' },
       })
+      
     }, ref)
     return () => ctx.revert()
   }, [])
@@ -54,7 +55,7 @@ export default function Skills() {
       <div className="section-head">
         <span className="sec-no">02</span>
         <h2 className="sec-title">SKILLS</h2>
-        </div>
+      </div>
       <p className="sec-sub">MY KNOWLEDGE LEVEL IN SOFTWARE</p>
 
       <div className="skills-box">
@@ -72,6 +73,7 @@ export default function Skills() {
       <div className="tools">
         {tools.map((t) => <span className="tool-chip" key={t}>{t}</span>)}
       </div>
+
     </section>
   )
 }

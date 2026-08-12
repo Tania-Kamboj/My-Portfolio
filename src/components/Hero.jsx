@@ -22,9 +22,18 @@ export default function Hero() {
         .from('.hero-line', { y: 30, opacity: 0, stagger: 0.15, duration: 0.6 }, '-=0.3')
         .from('.hero-info span', { y: 15, opacity: 0, stagger: 0.1, duration: 0.4 }, '-=0.2')
 
-      gsap.to('.blob', { y: -25, duration: 2.5, ease: 'sine.inOut', yoyo: true, repeat: -1, stagger: 0.4 })
+      gsap.to('.butterfly', {
+        y: -30,
+        rotation: 10,
+        duration: 2.8,
+        ease: 'sine.inOut',
+        yoyo: true,
+        repeat: -1,
+        stagger: 0.4,
+      })
 
-     gsap.to('.marquee-track', { xPercent: -50, ease: 'none', duration: 22, repeat: -1 })
+      gsap.to('.bf-2', { x: 25, duration: 4, ease: 'sine.inOut', yoyo: true, repeat: -1 })      
+      gsap.to('.marquee-track', { xPercent: -50, ease: 'none', duration: 22, repeat: -1 })
     }, ref)
     return () => ctx.revert()
   }, [])
@@ -35,12 +44,12 @@ export default function Hero() {
 
   return (
     <section className="hero" id="home" ref={ref}>
-      <div className="blob blob-1" />
-      <div className="blob blob-2" />
-      <div className="blob blob-3" />
+      <img className="butterfly bf-1" src="/butterfly.png" alt="" />
+      <img className="butterfly bf-2" src="/butterfly.png" alt="" />
+      <img className="butterfly bf-3" src="/butterfly.png" alt="" />
 
       <div className="hero-section">
-       <div className="giant-wrap">
+        <div className="giant-wrap">
           <h1 className="giant">
             {'TANIA'.split('').map((ch, i) => (
               <span className="giant-letter" key={i}>{ch}</span>

@@ -32,7 +32,7 @@ export default function About() {
             <div className="section-head">
                 <span className="sec-no">01</span>
                 <h2 className="sec-title">ABOUT ME</h2>
-                </div>
+            </div>
 
             <div className="about-card">
                 <img className="about-photo" src="/about.png" alt="Tania" />
