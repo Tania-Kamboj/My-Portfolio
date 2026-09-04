@@ -5,10 +5,8 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
 
 const projects = [
-  { title: 'BHAJAN GYAN EDUCATION', desc: 'Complete working website built for college students by providing them the all resources needed for study built in MERN stack.', tags: ['React', 'MongoDB', 'Node.js', 'Express'] },
-  { title: 'AIRBNB', desc: 'Property listing web app with search, filtering and a full booking flow on the MERN stack.', tags: ['Node.js', 'Express', 'MongoDB'] },
-  { title: 'RIDEINDIA', desc: 'A travel companion web app for bike riders travelling across the india by helping them find the hideen spots and added many more features for their convinience.', tags: ['Mobile-first', 'UI Design'] },
-  { title: 'GMAIL CLONE', desc: 'Email inbox interface with React Router navigation and basic CRUD operations for emails.', tags: ['React', 'Tailwind', 'Firebase'] },
+  { title: 'CLARITII', desc: 'Complete working website built for students who completed 10th or 12th grade to take career decisions based on their interests. Based on personal experiences.', tags: ['React', 'TypeScript', 'MongoDB', 'Node.js', 'Express'] },
+  { title: 'RIDEINDIA', desc: 'A travel companion web app for bike riders travelling across the india by helping them find the hidden spots and added many more features for their convenience.', tags: ['React', 'TypeScript', 'Mobile-first', 'UI Design'] },
 ]
 
 export default function Projects() {

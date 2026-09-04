@@ -39,9 +39,9 @@ export default function About() {
                 <div>
                     <h3>Web developer building simple and reliable applications</h3>
                     <p>
-                        Over the last few years, I’ve grown from writing basic programs to building full web applications. I started with core programming and gradually moved into real-world projects using the MERN stack.
+                        Over the last few years, I’ve grown from writing basic programs to building full web applications based on original ideas from my own experiences. I started with core programming and gradually moved into real-world projects using the MERN stack.
 
-                        I’ve learned how to structure code and turn designs into functional interfaces. My internship experience helped me understand team workflows, writing clean code, fixing bugs, and improving existing features.
+                        I’ve learned how to structure code and turn designs into functional interfaces. My internship and project building experience helped me understand team workflows, writing clean code, fixing bugs, and improving existing features.
 
                         Most of my growth came from building projects, making mistakes, and learning from them. Now, I focus on writing simple, maintainable code and building applications that are genuinely useful.
                     </p>

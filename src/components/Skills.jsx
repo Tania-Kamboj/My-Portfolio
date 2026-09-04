@@ -16,7 +16,7 @@ const skills = [
   { name: 'MONGODB', level: 70 },
   { name: 'MYSQL', level: 70 },
 ]
-const tools = ['Git', 'GitHub', 'VS Code', 'Cursor', 'Bootstrap', 'Material-UI', 'React Router', 'Mongoose', 'SEO']
+const tools = ['Git', 'GitHub', 'VS Code', 'Cursor', 'GSAP', 'Three.js', 'Bootstrap', 'Material-UI', 'React Router', 'Mongoose', 'SEO']
 
 export default function Skills() {
   const ref = useRef(null)
