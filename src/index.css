@@ -60,6 +60,19 @@ button {
   background: rgba(167, 139, 250, 0.12);
 }
 
+.smoke-puff {
+  position: fixed;
+  top: 0; left: 0;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 998;          
+  filter: blur(10px);  
+}
+
+@media (pointer: coarse) {
+  .smoke-puff { display: none; }
+}
+
 .progress-bar {
   position: fixed;
   top: 0;

@@ -8,7 +8,7 @@ const skills = [
   { name: 'HTML & CSS', level: 90 },
   { name: 'JAVASCRIPT', level: 85 },
   { name: 'TYPESCRIPT', level: 90 },
-  { name: 'REACT.JS', level: 85 },
+  { name: 'REACT.JS', level: 90 },
   { name: 'TAILWIND CSS', level: 82 },
   { name: 'NODE & EXPRESS', level: 70 },
   { name: 'PHP & WORDPRESS', level: 75 },
