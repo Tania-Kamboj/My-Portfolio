@@ -8,6 +8,7 @@ const LINKS = ['Home', 'About', 'Skills', 'Projects', 'Experience', 'Education',
 
 export default function Navbar() {
   const [active, setActive] = useState('Home')
+  const [open, setOpen] = useState(false)
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -16,25 +17,42 @@ export default function Navbar() {
     return () => ctx.revert()
   }, [])
 
- const goTo = (name) => {
+  const goTo = (name) => {
     setActive(name)
+    setOpen(false)   
     gsap.to(window, { duration: 1, ease: 'power2.inOut', scrollTo: { y: '#' + name.toLowerCase(), offsetY: 80 } })
   }
 
   return (
     <nav className="navbar">
       <div className="pill">
-        <span className="menu-icon">☰</span>
-        {LINKS.map((l) => (
-          <button key={l} className={'nav-link' + (active === l ? ' active' : '')} onClick={() => goTo(l)}>
-            {l}
-          </button>
-        ))}
+        <button className="menu-toggle" onClick={() => setOpen(!open)}>
+          {open ? '✕' : '☰'}
+        </button>
+
+        <div className="nav-links">
+          {LINKS.map((l) => (
+            <button key={l} className={'nav-link' + (active === l ? ' active' : '')} onClick={() => goTo(l)}>
+              {l}
+            </button>
+          ))}
+        </div>
       </div>
+
       <div className="pill">
-        <a className="resume-link" href="/resume.pdf" download>Resume &#8595;</a>
-        <span className="nav-name">Tania</span>
+        <a className="resume-link" href="/resume.pdf" download>Resume ↓</a>
+        <span className="nav-name">✦ Tania</span>
       </div>
+
+      {open && (
+        <div className="mobile-menu">
+          {LINKS.map((l) => (
+            <button key={l} className={active === l ? 'active' : ''} onClick={() => goTo(l)}>
+              {l}
+            </button>
+          ))}
+        </div>
+      )}
     </nav>
   )
 }
