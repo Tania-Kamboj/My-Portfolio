@@ -5,7 +5,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
 
 const projects = [
-  { title: 'CLARITII', desc: 'Complete working website built for students who completed 10th or 12th grade to take career decisions based on their interests. Based on personal experiences.', tags: ['React', 'TypeScript', 'MongoDB', 'Node.js', 'Express'] },
+  { title: 'PURSUITS', desc: 'Complete working website built for students who completed 10th or 12th grade to take career decisions based on their interests. Based on personal experiences.', tags: ['React', 'JavaScript', 'TypeScript', 'MongoDB', 'Node.js', 'Express', 'Apis'] },
   { title: 'RIDEINDIA', desc: 'A travel companion web app for bike riders travelling across the india by helping them find the hidden spots and added many more features for their convenience.', tags: ['React', 'TypeScript', 'Mobile-first', 'UI Design'] },
 ]
 
